@@ -1,0 +1,25 @@
+.example-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .custom-sidenav {
+    width: 60px;
+    max-width: 250px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+  }
+  
+  mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .main-content {
+    padding: 16px;
+    background-color: #fafafa;
+    height: calc(100vh - 64px); // Ajusta para a altura da toolbar
+    overflow-y: auto;
+  }

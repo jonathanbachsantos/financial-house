@@ -1,0 +1,13 @@
+<!-- src/app/components/dashboard/dashboard.component.html -->
+<div>
+    <h2>Dashboard Financeiro</h2>
+    <div>
+      <button mat-raised-button color="primary" (click)="exportData()">Exportar Dados</button>
+      <input type="file" (change)="importData($event)" accept=".json" />
+    </div>
+    <canvas id="financeChart"></canvas>
+    <div>
+      <h3>Total de Entradas: {{ totalEntries | currency }}</h3>
+      <h3>Total de Saídas: {{ totalExits | currency }}</h3>
+    </div>
+  </div>
